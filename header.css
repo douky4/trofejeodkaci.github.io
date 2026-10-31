@@ -18,10 +18,9 @@ header nav ul li a:hover { background: #3a6241; }
 header .create-trofej-btn-nav { background: #f3a62e; color: #172c1e; font-weight: 700; }
 header .create-trofej-btn-nav:hover { background: #ffc264; }
 header .dropdown-menu { background: #244a2d; min-width: 225px; padding: 8px; border-radius: 10px; }
-header .dropdown > a { display: inline-block; }
+header .dropdown > a { display: block; }
 header .dropdown:focus-within > .dropdown-menu, header .dropdown.open > .dropdown-menu { display: block; }
-.submenu-toggle { min-width: 44px; min-height: 44px; border: 0; border-radius: 6px; color: #fff; background: transparent; font-size: 1rem; cursor: pointer; }
-.submenu-toggle:hover { background: #3a6241; }
+header .dropdown.submenu-dismissed > .dropdown-menu { display: none; }
 .nav-toggle { display: none; }
 header :focus-visible, .top-bar a:focus-visible { outline: 3px solid #eabb67; outline-offset: 3px; }
 @media (max-width: 1100px) {
@@ -34,9 +33,10 @@ header :focus-visible, .top-bar a:focus-visible { outline: 3px solid #eabb67; ou
   header .create-trofej-nav { margin-right: 0; margin-bottom: 8px; }
   header nav > ul > li > a { font-size: 1.05rem; }
   header .dropdown-menu { position: static; box-shadow: none; margin: 4px 0 6px 14px; border-left: 1px solid #ffffff40; border-radius: 0; }
-  header .dropdown:hover > .dropdown-menu, header .dropdown:focus-within > .dropdown-menu { display: none; }
-  header .dropdown.open > .dropdown-menu { display: block; }
-  .submenu-toggle { float: right; }
+  header .dropdown > .dropdown-menu,
+  header .dropdown:hover > .dropdown-menu,
+  header .dropdown:focus-within > .dropdown-menu { display: block; }
+  header .dropdown-menu a { white-space: normal; font-size: .95rem; }
 }
 @media (max-width: 600px) {
   html { font-size: 17px; }
