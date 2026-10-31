@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt – Výrobky z paroží</title>
   <link rel="stylesheet" href="styles.css" />
-<link rel="stylesheet" href="modern.css"><script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script><script defer src="enhanced.js"></script></head>
-<body><a class="skip-link" href="#obsah">P&#345;ej&#237;t na obsah</a>
+</head>
+<body>
 <!-- NOVÁ BÍLÁ LIŠTA NAHOŘE -->
   <div class="top-bar">
     <div class="top-bar-container">
@@ -22,20 +22,20 @@
       <div class="contact">
         <a href="mailto:trofejeodkaci@seznam.cz">trofejeodkaci@seznam.cz</a>
         <span>|</span>
-        <a href="tel:+420720208418">+420 720 208 418</a>
+        <span>+420 720 208 418</span>
 
         <!-- WhatsApp malé tlačítko -->
         <a href="https://wa.me/420720208418"
-           target="_blank" rel="noopener noreferrer"
+           target="_blank"
            class="social-pill">
-          <img loading="lazy" decoding="async" src="Fotky/whatsapp.png" alt="WhatsApp">
+          <img src="Fotky/whatsapp.png" alt="WhatsApp">
         </a>
 
         <!-- Instagram malé tlačítko -->
         <a href="https://www.instagram.com/trofejeodkaci/"
-           target="_blank" rel="noopener noreferrer"
+           target="_blank"
            class="social-pill">
-          <img loading="lazy" decoding="async" src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
+          <img src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
         </a>
       </div>
 
@@ -43,57 +43,61 @@
 </div>
 
 <header>
-    <nav>
-      <ul>
-        <li class="create-trofej-nav">
-          <a href="kontakt.html" class="create-trofej-btn-nav">Chci vytvořit svou trofej</a>
-        </li>
-        <li><a href="index.html">Domů</a></li>
-        <li class="dropdown">
-          <a href="trofeje.html">Trofeje</a>
-          <ul class="dropdown-menu">
-            <li><a href="jeleni.html">Jelení trofeje</a></li>
-            <li><a href="danci.html">Dančí trofeje</a></li>
-            <li><a href="srnci.html">Srnčí trofeje</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="lovecke-doplnky.html">Lovecké doplňky</a>
-          <ul class="dropdown-menu">
-            <li><a href="noze.html">Nože</a></li>
-            <li><a href="opasky.html">Opasky</a></li>
-            <li><a href="doplnky-parozi.html">Doplňky z paroží</a></li>
-          </ul>
-        </li>
-        <li><a href="pred-po.html">Před a Po</a></li>
-        <li><a href="jak-to-probiha.html">Jak to probíhá</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <ul>
+      <!-- ORANŽOVÉ TLAČÍTKO V MENU: VYTVOŘIT TROFEJ -->
+      <li class="create-trofej-nav">
+        <a href="kontakt.html" class="create-trofej-btn-nav">
+          Chci vytvořit svou trofej
+        </a>
+      </li>
+      <li><a href="index.html">Domů</a></li>
+      <li class="dropdown">
+        <a href="trofeje.html">Trofeje</a>
+        <ul class="dropdown-menu">
+          <li><a href="jeleni.html">Jelení trofeje</a></li>
+          <li><a href="danci.html">Dančí trofeje</a></li>
+          <li><a href="srnci.html">Srnčí trofeje</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="lovecke-doplnky.html">Lovecké doplňky</a>
+        <ul class="dropdown-menu">
+          <li><a href="noze.html">Nože</a></li>
+          <li><a href="opasky.html">Opasky</a></li>
+          <li><a href="doplnky-parozi.html">Doplňky z paroží</a></li>
+        </ul>
+      </li>
+      <li><a href="pred-po.html">Před a Po</a></li>
+      <li><a href="jak-to-probiha.html">Jak to probíhá</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
 
-<main id="obsah">
+<main>
   <h1>Kontakt</h1>
   <p>
     Chcete si nechat vyrobit trofej z vašeho úlovku, nebo máte dotazy?
-    Vypl&#328;te formul&#225;&#345; n&#237;&#382;e. Pro lep&#353;&#237; p&#345;edstavu m&#367;&#382;ete vlo&#382;it odkaz na fotku. Fotografie lze poslat tak&#233; na n&#225;&#353; e-mail.
+    Vyplňte formulář níže. Menší fotku můžete přiložit pro lepší představu,
+    větší fotky nám prosím pošlete až v odpovědi na e-mail.
   </p>
 
   <!-- FORMULÁŘ PRO POPTÁVKU -->
   <!-- FORMULÁŘ PRO POPTÁVKU -->
-<form
+<form 
   id="contact-form"
   method="POST"
   class="contact-form">
 
   <label for="name">Jméno:</label>
-  <input type="text" id="name" autocomplete="name" name="from_name" placeholder="Vaše jméno" required>
+  <input type="text" id="name" name="from_name" placeholder="Vaše jméno" required>
 
   <label for="email">E-mail:</label>
-  <input type="email" id="email" autocomplete="email" name="reply_to" placeholder="vas@email.cz" required>
+  <input type="email" id="email" name="reply_to" placeholder="vas@email.cz" required>
 
   <label for="phone">Telefon (povinné):</label>
-  <input type="tel" autocomplete="tel" id="phone" name="phone" placeholder="+420 123 456 789" required>
+  <input type="text" id="phone" name="phone" placeholder="+420 123 456 789" required>
 
   <label for="photo_url">Odkaz na fotku úlovku <em>(nepovinné)</em>:</label>
   <input type="url" id="photo_url" name="photo_url" placeholder="https://...">
@@ -107,8 +111,39 @@
 
 
 <!-- EmailJS knihovna -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // stejné údaje jako v EmailJS (Account → API keys + Services + Templates)
+    emailjs.init("IFOtmBtku_1mu_vYD");           // PUBLIC KEY / User ID
 
+    const form = document.getElementById('contact-form');
 
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_088u03w", "template_8c9nd5s", this)
+        .then(function () {
+          alert("✅ Zpráva byla úspěšně odeslána!");
+          form.reset();
+        })
+        .catch(function (error) {
+          console.error("EmailJS error:", error);
+
+          // přívětivější hlášky podle typu chyby
+          if (error && error.status === 413) {
+            alert("❌ Soubor je příliš velký. Zkuste prosím menší fotku (EmailJS limit je cca 50 kB).");
+          } else if (error && error.status === 401) {
+            alert("❌ Chyba autorizace. Zkontroluj v EmailJS public key, Service ID a Template ID.");
+          } else {
+            alert("❌ Došlo k chybě při odesílání (" +
+                  (error && error.status ? error.status : "??") + "): " +
+                  (error && error.text ? error.text : "zkontroluj prosím nastavení EmailJS."));
+          }
+        });
+    });
+  });
+</script>
 
 <p>Nebo nám napište přímo: <strong>trofejeodkaci@seznam.cz</strong></p>
 <p>Tel.: +420 720 208 418</p>
@@ -121,16 +156,26 @@
   <!-- Plovoucí ikony WhatsApp + Instagram -->
   <div class="floating-social">
     <a href="https://wa.me/420720208418"
-       target="_blank" rel="noopener noreferrer"
+       target="_blank"
        class="floating-btn">
-      <img loading="lazy" decoding="async" src="Fotky/whatsapp.png" alt="WhatsApp">
+      <img src="Fotky/whatsapp.png" alt="WhatsApp">
     </a>
 
     <a href="https://www.instagram.com/trofejeodkaci/"
-       target="_blank" rel="noopener noreferrer"
+       target="_blank"
        class="floating-btn">
-      <img loading="lazy" decoding="async" src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
+      <img src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
     </a>
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
