@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jak to probíhá – Trofej z Tvého úlovku</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
-</head>
-<body>
+
+<link rel="stylesheet" href="modern.css"><script defer src="enhanced.js"></script></head>
+<body><a class="skip-link" href="#obsah">P&#345;ej&#237;t na obsah</a>
 
 <!-- Bílá lišta nahoře -->
   <div class="top-bar">
@@ -24,20 +24,20 @@
       <div class="contact">
         <a href="mailto:trofejeodkaci@seznam.cz">trofejeodkaci@seznam.cz</a>
         <span>|</span>
-        <span>+420 720 208 418</span>
+        <a href="tel:+420720208418">+420 720 208 418</a>
 
         <!-- WhatsApp malé tlačítko -->
         <a href="https://wa.me/420720208418"
-           target="_blank"
+           target="_blank" rel="noopener noreferrer"
            class="social-pill">
-          <img src="Fotky/whatsapp.png" alt="WhatsApp">
+          <img loading="lazy" decoding="async" src="Fotky/whatsapp.png" alt="WhatsApp">
         </a>
 
         <!-- Instagram malé tlačítko -->
         <a href="https://www.instagram.com/trofejeodkaci/"
-           target="_blank"
+           target="_blank" rel="noopener noreferrer"
            class="social-pill">
-          <img src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
+          <img loading="lazy" decoding="async" src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
         </a>
       </div>
 
@@ -45,38 +45,36 @@
 </div>
 
 <header>
-  <nav>
-    <ul>
-      <li class="create-trofej-nav">
-        <a href="kontakt.html" class="create-trofej-btn-nav">
-          Chci vytvořit svou trofej
-        </a>
-      </li>
-      <li><a href="index.html">Domů</a></li>
-      <li class="dropdown">
-        <a href="trofeje.html">Trofeje</a>
-        <ul class="dropdown-menu">
-          <li><a href="jeleni.html">Jelení trofeje</a></li>
-          <li><a href="danci.html">Dančí trofeje</a></li>
-          <li><a href="srnci.html">Srnčí trofeje</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="lovecke-doplnky.html">Lovecké doplňky</a>
-        <ul class="dropdown-menu">
-          <li><a href="noze.html">Nože</a></li>
-          <li><a href="opasky.html">Opasky</a></li>
-          <li><a href="doplnky-parozi.html">Doplňky z paroží</a></li>
-        </ul>
-      </li>
-      <li><a href="pred-po.html">Před a Po</a></li>
-      <li><a href="jak-to-probiha.html">Jak to probíhá</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+      <ul>
+        <li class="create-trofej-nav">
+          <a href="kontakt.html" class="create-trofej-btn-nav">Chci vytvořit svou trofej</a>
+        </li>
+        <li><a href="index.html">Domů</a></li>
+        <li class="dropdown">
+          <a href="trofeje.html">Trofeje</a>
+          <ul class="dropdown-menu">
+            <li><a href="jeleni.html">Jelení trofeje</a></li>
+            <li><a href="danci.html">Dančí trofeje</a></li>
+            <li><a href="srnci.html">Srnčí trofeje</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="lovecke-doplnky.html">Lovecké doplňky</a>
+          <ul class="dropdown-menu">
+            <li><a href="noze.html">Nože</a></li>
+            <li><a href="opasky.html">Opasky</a></li>
+            <li><a href="doplnky-parozi.html">Doplňky z paroží</a></li>
+          </ul>
+        </li>
+        <li><a href="pred-po.html">Před a Po</a></li>
+        <li><a href="jak-to-probiha.html">Jak to probíhá</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
+<main id="obsah">
   <section class="proces-kroky">
     <p><strong>Jak to probíhá – jednoduchý proces</strong></p>
 
@@ -111,15 +109,15 @@
   <!-- Plovoucí ikony WhatsApp + Instagram -->
   <div class="floating-social">
     <a href="https://wa.me/420720208418"
-       target="_blank"
+       target="_blank" rel="noopener noreferrer"
        class="floating-btn">
-      <img src="Fotky/whatsapp.png" alt="WhatsApp">
+      <img loading="lazy" decoding="async" src="Fotky/whatsapp.png" alt="WhatsApp">
     </a>
 
     <a href="https://www.instagram.com/trofejeodkaci/"
-       target="_blank"
+       target="_blank" rel="noopener noreferrer"
        class="floating-btn">
-      <img src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
+      <img loading="lazy" decoding="async" src="Fotky/instagram-icon_1057-2227.avif" alt="Instagram">
     </a>
   </div>
 </body>
