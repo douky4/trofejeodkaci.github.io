@@ -28,6 +28,7 @@
   margin: 28px 0 48px;
 }
 .trophy-content .product-gallery figure {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -36,9 +37,9 @@
   min-width: 0;
   margin: 0;
   overflow: hidden;
-  border: 1px solid #e1e5dd;
+  border: 1px solid #294335;
   border-radius: 16px;
-  background: #fff;
+  background: #182b21;
   box-shadow: 0 6px 22px rgb(27 53 31 / 6%);
   transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
 }
@@ -49,23 +50,29 @@
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: contain;
-  background: #eeefe9;
+  background: #182b21;
   border-radius: 0;
   transition: transform .45s ease;
 }
 .trophy-content .product-gallery figcaption {
-  position: relative;
+  position: absolute;
+  inset: auto 0 0;
   z-index: 1;
   order: 1;
-  display: grid;
-  place-items: center;
+  display: block;
   box-sizing: border-box;
-  min-height: 76px;
-  padding: 18px 20px;
-  background: #fff;
-  color: #24452d;
-  font-size: 1rem;
-  line-height: 1.5;
+  min-height: 110px;
+  padding: 64px 24px 24px;
+  background: linear-gradient(transparent, rgb(8 20 13 / 88%));
+  color: #fff;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-weight: 600;
+  letter-spacing: -.015em;
+  line-height: 1.4;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 35%);
+  pointer-events: none;
 }
 /* Override the old image shadow; lift the complete card instead. */
 .trophy-content .product-gallery figure:hover img {
