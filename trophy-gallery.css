@@ -1,0 +1,102 @@
+/* Loaded only by the trophy overview and its three category pages. */
+.trophy-content > h1 {
+  color: #21452c;
+  letter-spacing: -.025em;
+}
+.trophy-content > h2 {
+  margin: 42px 0 28px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+.trophy-content .subcategories { gap: 12px; margin: 26px 0; }
+.trophy-content .subcat-link {
+  border-radius: 999px;
+  padding: 11px 22px;
+  border-color: #29552b;
+  box-shadow: 0 3px 10px rgb(30 65 35 / 8%);
+  transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+.trophy-content .subcat-link:focus-visible {
+  outline: 3px solid #ad823f;
+  outline-offset: 4px;
+}
+.trophy-content .product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+  margin: 28px 0 48px;
+}
+.trophy-content .product-gallery figure {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #e1e5dd;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 6px 22px rgb(27 53 31 / 6%);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+.trophy-content .product-gallery figure img {
+  display: block;
+  order: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #eeefe9;
+  border-radius: 0;
+  transition: transform .45s ease;
+}
+.trophy-content .product-gallery figcaption {
+  position: relative;
+  z-index: 1;
+  order: 1;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  min-height: 76px;
+  padding: 18px 20px;
+  background: #fff;
+  color: #24452d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Override the old image shadow; lift the complete card instead. */
+.trophy-content .product-gallery figure:hover img {
+  transform: none;
+  box-shadow: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .trophy-content .product-gallery figure:hover {
+    transform: translateY(-5px) scale(1.015);
+    border-color: #b6c6b0;
+    box-shadow: 0 16px 32px rgb(27 53 31 / 13%);
+  }
+  .trophy-content .product-gallery figure:hover img { transform: scale(1.025); }
+  .trophy-content .subcat-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgb(30 65 35 / 14%);
+  }
+}
+@media (max-width: 900px) {
+  .trophy-content .product-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+}
+@media (max-width: 560px) {
+  .trophy-content .product-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .trophy-content .product-gallery figure { max-width: 420px; justify-self: center; }
+  .trophy-content .subcat-link { padding: 10px 17px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .trophy-content .product-gallery figure,
+  .trophy-content .product-gallery figure img,
+  .trophy-content .subcat-link { transition: none; }
+  .trophy-content .product-gallery figure:hover,
+  .trophy-content .product-gallery figure:hover img,
+  .trophy-content .subcat-link:hover { transform: none; }
+}
