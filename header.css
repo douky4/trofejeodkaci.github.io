@@ -19,6 +19,9 @@ header .create-trofej-btn-nav { background: #f3a62e; color: #172c1e; font-weight
 header .create-trofej-btn-nav:hover { background: #ffc264; }
 header .dropdown-menu { background: #244a2d; min-width: 225px; padding: 8px; border-radius: 10px; }
 header .dropdown > a { display: block; }
+/* Also suppress arrow buttons left behind by an older cached header script. */
+header .submenu-toggle { display: none !important; }
+header .dropdown > a::after { content: none !important; }
 header .dropdown:focus-within > .dropdown-menu, header .dropdown.open > .dropdown-menu { display: block; }
 header .dropdown.submenu-dismissed > .dropdown-menu { display: none; }
 .nav-toggle { display: none; }

@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('header nav');
   if (!nav) return;
+  nav.querySelectorAll('.submenu-toggle').forEach(button => button.remove());
   const list = nav.querySelector('ul');
   if (!list) return;
   list.id = 'site-navigation';
